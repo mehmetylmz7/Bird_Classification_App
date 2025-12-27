@@ -102,6 +102,24 @@ python tahmin_et.py
 *   Eğitim veri seti 200 farklı kuş türünden oluşmaktadır.
 *   **Not:** Model ağırlıkları (`model_son.pth`) doğrudan kullanıma hazırdır.
 
+## 🗂️ Model ve Test Verileri (indirilebilir bağlantılar)
+
+- **Eğitilmiş model (Google Drive):** https://drive.google.com/file/d/1ernu1ppbuette0XA_ZvIA5NyziPMLJFf/view?usp=sharing
+	- İndirdikten sonra proje kök dizinine `model_son.pth` olarak yerleştiriniz.
+	- Alternatif olarak `gdown` ile terminalden indirebilirsiniz:
+		```bash
+		pip install gdown
+		gdown 'https://drive.google.com/uc?id=1ernu1ppbuette0XA_ZvIA5NyziPMLJFf' -O model_son.pth
+		```
+
+- **Model testi için örnek dosyalar (test.zip - Google Drive):** https://drive.google.com/file/d/1UMvLlCE7DeyIpzpa7g9HkHG5FJSA7Qky/view?usp=sharing
+	- İndirip açtıktan sonra test görsellerini örneğin `tests/` dizinine koyabilirsiniz.
+	- Terminalde `unzip test.zip -d tests/` ile açabilirsiniz.
+
+- **Eğitim veri seti (Kaggle):** https://www.kaggle.com/datasets/kedarsai/bird-species-classification-220-categories
+	- Kaggle üzerinden indirip eğitim/deneme işlemleri için kullanabilirsiniz.
+
+
 ## ℹ️ Notlar
 
 Çalışmayı bitirdiğinizde sanal ortamdan çıkmak için:
