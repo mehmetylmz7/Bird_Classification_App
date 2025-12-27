@@ -27,35 +27,62 @@ Projeyi çalıştırabilmek için aşağıdaki gereksinimlerin sisteminizde kuru
 
 ## 🛠️ Kurulum ve Çalıştırma
 
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin.
+🔗 GitHub Proje Bağlantısı
 
-### 1. Proje Dizinine Girin
+Projenin GitHub deposuna aşağıdaki bağlantıdan ulaşabilirsiniz:
+
+👉 https://github.com/mehmetylmz7/Bird_Classification_App
+
+
+🛠️ Kurulum ve Çalıştırma (Güncellenmiş)
+
+Projeyi GitHub üzerinden indirip yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin.
+
+1. Projeyi GitHub’dan İndirin
+Seçenek A: Git ile (Önerilen)
 ```bash
-cd ~/Desktop/clean_project
+git clone https://github.com/mehmetylmz7/Bird_Classification_App.git
 ```
 
-### 2. Sanal Ortam Oluşturun
+Seçenek B: ZIP olarak
+
+GitHub sayfasında `Code` → `Download ZIP`
+
+ZIP dosyasını istediğiniz bir dizine çıkarın.
+
+2. Proje Dizinine Girin
+
+Projeyi hangi dizine indirdiyseniz, terminalde o dizine girmeniz yeterlidir.
+
+```bash
+cd Bird_Classification_App
+```
+
+📌 Not:
+`clean_project` gibi sabit bir yol yerine, GitHub repo adı kullanmak en doğru ve profesyonel yaklaşımdır.
+Bu, farklı kullanıcılar ve işletim sistemleri için tutarlılık sağlar.
+
+3. Sanal Ortam Oluşturun
 ```bash
 python3 -m venv venv
 ```
 
-### 3. Sanal Ortamı Aktif Edin
+4. Sanal Ortamı Aktif Edin
 ```bash
 source venv/bin/activate
 ```
-*Terminal başında `(venv)` ifadesini görmelisiniz.*
 
-### 4. pip Güncellemesi
+5. pip Güncellemesi
 ```bash
 pip install --upgrade pip
 ```
 
-### 5. Bağımlılıkları Yükleyin
+6. Bağımlılıkları Yükleyin
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Web Uygulamasını Başlatın
+7. Web Uygulamasını Başlatın
 ```bash
 streamlit run web_app.py
 ```
